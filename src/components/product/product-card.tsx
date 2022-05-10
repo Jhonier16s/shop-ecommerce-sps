@@ -105,7 +105,7 @@ const ProductCard: FC<ProductProps> = ({
         className={cn(
           "w-full overflow-hidden",
           {
-            "ps-0 lg:ps-2.5 xl:ps-4 pe-2.5 xl:pe-4": variant === "grid",
+            "ps-2 lg:ps-2.5 xl:ps-4 pe-2.5 xl:pe-4 ": variant === "grid",
             "ps-0": variant === "gridSlim",
             "px-4 lg:px-5 2xl:px-4": variant === "listSmall",
           },
