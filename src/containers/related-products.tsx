@@ -11,7 +11,7 @@ interface ProductsProps {
 
 const RelatedProducts: React.FC<ProductsProps> = ({
   sectionHeading,
-  className = "mb-9 lg:mb-10 xl:mb-14",
+  className = "mb-9 lg:mb-10 xl:mb-14 bg-graySps",
   products,
   currentProductId,
 }) => {

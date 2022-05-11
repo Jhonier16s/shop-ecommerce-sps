@@ -9,7 +9,7 @@ const SiteLayout: React.FC = ({ children }) => {
 		<div className=" flex flex-col min-h-screen">
 			<Header />
 			<main
-				className="mb-0 relative flex-grow"
+				className="mb-0 relative flex-grow bg-graySps"
 				style={{
 					minHeight: "-webkit-fill-available",
 					WebkitOverflowScrolling: "touch",

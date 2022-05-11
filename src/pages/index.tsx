@@ -29,20 +29,20 @@ export default function Home() {
   return (
     <>
        
-        <SpsHome className="max-w-screen-2xl mx-auto mb-8"  src="/assets/images/banner/banner-3.jpg"/>
+        <SpsHome className="max-w-screen-2xl mx-auto"  src="/assets/images/banner/banner-3.jpg"/>
       {/* <BannerCard
         key={`banner--key${banners?.homeThreeBanner?.[0].id}`}
         banner={banners?.homeThreeBanner?.[0]}
         href={`${ROUTES.COLLECTIONS}/${banners?.homeThreeBanner?.[0].slug}`}
         className="bg-graySps px-2 pt-4 mb-0 pb-8"
       /> */}
-      <NewTittles name="Best Sellers" />
       <Container>{/* <SpsHome /> */}</Container>
       {/* <BannerSliderBlock className="" banners={banners?.promotionBanner} /> */}
       {/*  <BannerBlock banners={banners?.homeThreeMasonryBanner} /> */}
       <Container>
+      <NewTittles name="Best Sellers" />
         <ProductsFlashSaleBlock date={"2023-03-01T01:02:03"} />
-        <SpsHome className="max-w-screen-3xl mx-auto mb-8"  src="/assets/images/banner/metamask.png"/>
+        <SpsHome className="max-w-screen-3xl mx-auto "  src="/assets/images/banner/metamask.png"/>
       </Container>
       <Container>
         <NewTittles name="Categories" />
@@ -72,7 +72,7 @@ export default function Home() {
         {/* <Support />  */}
         {/* <Instagram /> */}
         {/* <Subscription className="bg-opacity-0 px-5 sm:px-16 xl:px-0 py-12 md:py-14 xl:py-16" /> */}
-       <SpsHome className="max-w-screen-3xl mx-auto mb-8"  src="/assets/images/banner/banner-7.jpg"/>
+       <SpsHome className="max-w-screen-3xl mx-auto pb-2 bg-graySps"  src="/assets/images/banner/banner-7.jpg"/>
       </Container>
       <Divider className="mb-0" />
     </>
