@@ -26,7 +26,7 @@ export const FilteredItem = ({ itemKey, itemValue }: Props) => {
 	}
 	return (
 		<div
-			className="group flex flex-shrink-0 m-1.5 items-center border border-gray-300 bg-borderBottom rounded-lg text-xs px-3.5 py-2.5 capitalize text-heading cursor-pointer transition duration-200 ease-in-out hover:border-heading"
+			className="group flex flex-shrink-0 m-1.5 items-center border border-gray-100 bg-borderBottom rounded-lg text-xs px-3.5 py-2.5 capitalize text-heading cursor-pointer transition duration-200 ease-in-out hover:border-yellowSps"
 			onClick={handleClose}
 		>
 			{itemValue}

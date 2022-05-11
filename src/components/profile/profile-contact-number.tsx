@@ -27,13 +27,13 @@ const ProfileContactNumber = ({ userId, profileId, contact }: Props) => {
   return (
     <div className="w-full flex flex-col">
       <div className="flex items-center justify-between mb-5 md:mb-8">
-        <p className="flex items-center space-s-3 md:space-s-4 text-lg lg:text-xl xl:text-2xl text-white capitalize font-bold">
+        <p className="flex items-center space-s-3 md:space-s-4 text-lg lg:text-xl xl:text-2xl text-heading capitalize font-bold">
           {t("text-contact-number")}
         </p>
 
         {onAdd && (
           <button
-            className="flex items-center text-sm font-semibold text-white transition-colors duration-200 focus:outline-none focus:opacity-70 hover:opacity-70 mt-1"
+            className="flex items-center text-sm font-semibold text-heading transition-colors duration-200 focus:outline-none focus:opacity-70 hover:opacity-70 mt-1"
             onClick={onAdd}
           >
             <PlusIcon className="w-4 h-4 stroke-2 me-0.5" />

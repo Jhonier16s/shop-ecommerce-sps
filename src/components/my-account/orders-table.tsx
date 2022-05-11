@@ -17,7 +17,7 @@ const OrdersTable: React.FC<Props> = ({ orders }: Props) => {
   const { t } = useTranslation("common");
   return (
     <>
-      <h2 className="text-lg md:text-xl xl:text-2xl font-bold text-white mb-6 xl:mb-8">
+      <h2 className="text-lg md:text-xl xl:text-2xl font-bold text-heading mb-6 xl:mb-8">
         {t("text-orders")}
       </h2>
       <motion.div

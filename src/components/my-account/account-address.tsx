@@ -48,7 +48,7 @@ export const AccountAddress: React.FC<AddressesProps> = ({
             ))}
           </>
         ) : (
-          <span className="relative px-5 py-6 text-base text-left bg-heading rounded border border-border-200">
+          <span className="relative px-5 py-6 text-base text-left bg-white rounded border border-border-200">
             {t('text-no-address')}
           </span>
         )}

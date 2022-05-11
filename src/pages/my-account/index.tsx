@@ -37,7 +37,7 @@ export default function AccountPage() {
 
   return (
     <AccountLayout>
-      <h2 className="text-lg md:text-xl xl:text-2xl font-bold text-white mb-3 xl:mb-5">
+      <h2 className="text-lg md:text-xl xl:text-2xl font-bold text-heading mb-3 xl:mb-5">
         {t("text-dashboard")}
       </h2>
       <div className="text-sm leading-7 md:text-base md:leading-loose">

@@ -89,7 +89,7 @@ export default function MobileMenu() {
     dept = dept + 1;
 
     return (
-      <ul className="pt-0.5">
+      <ul className=" text-white pt-0.5">
         {data?.map((menu: any, index: number) => {
           const menuName: string = `sidebar-submenu-${dept}-${menuIndex}-${index}`;
 
@@ -112,7 +112,7 @@ export default function MobileMenu() {
   return (
     <>
       <div className="flex flex-col bg-blackSps justify-between w-full h-full">
-        <div className="w-full border-b bg-blackSps border-gray-100 flex justify-between items-center relative ps-5 md:ps-7 flex-shrink-0 py-0.5">
+        <div className="w-full bg-blackSps  flex justify-between items-center relative ps-5 md:ps-7 flex-shrink-0 py-0.5">
           <Link href={ROUTES.HOME}>
             <div>
               <h3 className="font-semibold text-lg text-white">CryptoCommerce</h3>
@@ -142,8 +142,7 @@ export default function MobileMenu() {
                       hasSubMenu={menu.subMenu}
                       menuName={menuName}
                       key={menuName}
-                      menuIndex={index}
-                      
+                      menuIndex={index} 
                     />
                   );
                 })}
@@ -152,7 +151,7 @@ export default function MobileMenu() {
           </div>
         </Scrollbar>
 
-        <div className="flex items-center justify-center bg-blackSps border-t border-gray-100 px-7 flex-shrink-0 space-s-1">
+        <div className="flex items-center justify-center bg-blackSps  px-7 flex-shrink-0 space-s-1">
           {socials?.map((social: Social, index: number) => (
             <a
               href={social?.url ?? "#!"}

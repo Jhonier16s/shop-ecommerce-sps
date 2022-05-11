@@ -76,7 +76,7 @@ export default function AccountNav() {
                 mainPath === menuPath
                   ? "bg-yellowSps font-bold flex items-center cursor-pointer text-sm lg:text-base text-heading py-3.5 px-4 lg:px-5 rounded mb-2 "
 
-                  : "flex items-center cursor-pointer text-sm lg:text-base text-white font-normal py-3.5 px-4 lg:px-5 rounded mb-2"
+                  : "flex items-center cursor-pointer text-sm lg:text-base text-heading font-normal py-3.5 px-4 lg:px-5 rounded mb-2"
               }
             >
               {item.icon}
@@ -86,7 +86,7 @@ export default function AccountNav() {
         );
       })}
       <button
-        className="flex items-center cursor-pointer text-sm lg:text-base text-white font-normal py-3.5 px-4 lg:px-5 focus:outline-none"
+        className="flex items-center cursor-pointer text-sm lg:text-base text-heading font-normal py-3.5 px-4 lg:px-5 focus:outline-none"
         onClick={onClickLogout}
       >
         <IoLogOutOutline className="w-5 h-5" />
