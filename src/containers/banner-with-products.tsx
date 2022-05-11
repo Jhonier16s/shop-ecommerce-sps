@@ -44,8 +44,8 @@ const BannerWithProducts: React.FC<ProductsProps> = ({
 
   return (
     <div className={className}>
-      <div className="mb-4 h-16 text-justify py-2 pl-9 font-bold mx-auto max-w-[1920px] overflow-hidden bg-gradient-to-r from-gradientOneBlue to-gradientTwoPurple md:h-20  md:pl-10">
-        <p className="font-light pb-2 text-white text-2xl md:text-3xl">
+      <div className="border rounded-md border-gray-800 mb-4 h-16 text-justify py-2 pl-9 font-bold mx-auto max-w-[1920px] overflow-hidden bg-gradient-to-r  md:h-20  md:pl-10">
+        <p className="font-light pb-2 text-heading text-2xl md:text-3xl">
           Other Products
         </p>
         {

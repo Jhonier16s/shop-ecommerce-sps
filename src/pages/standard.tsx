@@ -3,9 +3,9 @@ import Container from "@components/ui/container";
 import CollectionBlock from "@containers/collection-block";
 import BannerCarouselBlock from "@containers/banner-carousel-block";
 import Divider from "@components/ui/divider";
-import DownloadApps from "@components/common/download-apps";
+/* import DownloadApps from "@components/common/download-apps";
 import Support from "@components/common/support";
-import Subscription from "@components/common/subscription";
+import Subscription from "@components/common/subscription"; */
 import HeroBlock from "@containers/hero-block";
 import BrandBlock from "@containers/brand-block";
 import CategoryBlock from "@containers/category-block";
@@ -18,6 +18,8 @@ import { useEffect } from "react";
 import { ROUTES } from "@lib/routes";
 import { useUI } from "@contexts/ui.context";
 import {useBannerQuery} from "@framework/banner/banner.query";
+import NewTittles from "@components/ui/NewTittles";
+
 
 export { getStaticProps } from "@framework/ssr/pages";
 
@@ -41,6 +43,7 @@ export default function Home() {
         <BannerCarouselBlock banners={banners?.promotionBannerTwo}/>
         <CategoryBlock sectionHeading="text-shop-by-category" />
         <Divider />
+        <NewTittles name = "Best Seller" />
         <BestSellerProductFeed />
         <BannerCard
           key={`banner--key${banners?.homeOneBanner.id}`}
@@ -49,14 +52,15 @@ export default function Home() {
           className="mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0"
           classNameInner="h-28 sm:h-auto"
         />
+        <NewTittles name ="New Arrivals"/>
         <NewArrivalsProductFeed />
         <Divider />
         <BrandBlock sectionHeading="text-top-brands" />
         <CollectionBlock />
         <FeatureBlock />
-        <DownloadApps className="bg-linen" />
-        <Support />
-        <Subscription className="bg-linen px-5 sm:px-8 md:px-16 2xl:px-24" />
+        {/* <DownloadApps className="bg-linen" />
+        <Support /> */}
+        {/* <Subscription className="bg-linen px-5 sm:px-8 md:px-16 2xl:px-24" /> */}
       </Container>
     </>
   );

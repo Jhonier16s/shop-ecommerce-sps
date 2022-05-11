@@ -22,7 +22,7 @@ const SectionHeader: React.FC<Props> = ({
 			{categorySlug && (
 				<Link
 					href={categorySlug}
-					className="text-white text-xs lg:text-sm xl:text-base  mt-0.5 lg:mt-1"
+					className="text-heading text-xs lg:text-sm xl:text-base  mt-0.5 lg:mt-1"
 				>
 					{t("text-see-all-product")}
 				</Link>

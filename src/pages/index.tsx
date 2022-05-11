@@ -36,7 +36,7 @@ export default function Home() {
         href={`${ROUTES.COLLECTIONS}/${banners?.homeThreeBanner?.[0].slug}`}
         className="bg-graySps px-2 pt-4 mb-0 pb-8"
       /> */}
-      <NewTittles name="Más vendidos" />
+      <NewTittles name="Best Sellers" />
       <Container>{/* <SpsHome /> */}</Container>
       {/* <BannerSliderBlock className="" banners={banners?.promotionBanner} /> */}
       {/*  <BannerBlock banners={banners?.homeThreeMasonryBanner} /> */}
@@ -56,7 +56,7 @@ export default function Home() {
         /> 
          <NewTittles name="Brands" />
         <BrandGridBlock sectionHeading="text-top-brands" /> 
-        <NewTittles name="Vendedores destacados" />
+        <NewTittles name="Featured Sellers" />
         <BrandBlock sectionHeading="text-top-brands" />
         {/*  <BannerWithProducts
           sectionHeading="text-on-selling-products"

@@ -40,8 +40,8 @@ const ProductsFeatured: React.FC<ProductsProps> = ({
         sectionHeading={sectionHeading}
         categorySlug={categorySlug}
       />
-        <div className="mb-4 h-12 py-2 pl-10 font-bold mx-auto max-w-[1920px] overflow-hidden bg-gradient-to-r from-gradientOneBlue to-gradientTwoPurple md:h-14 md:pl-10">
-          <p className="text-justify font-light text-white text-2xl md:text-3xl">
+        <div className="mb-4 h-12 py-2 pl-10 font-bold mx-auto max-w-[1920px] overflow-hidden bg-gradient-to-r  md:h-14 md:pl-10">
+          <p className="text-justify font-light text-heading text-2xl md:text-3xl">
             Featured Products
           </p>
         </div>

@@ -7,7 +7,7 @@ import { getLayout } from "@components/layout/layout";
 import { Address } from "@framework/types";
 import Divider from "@components/ui/divider";
 import Container from "@components/ui/container";
-import Subscription from "@components/common/subscription";
+/* import Subscription from "@components/common/subscription"; */
 
 export { getStaticProps } from "@framework/ssr/common";
 
@@ -78,7 +78,7 @@ export default function CheckoutPage() {
             </div>
           </div>
         </div>
-        <Subscription />
+        {/* <Subscription /> */}
       </Container>
     </>
   );

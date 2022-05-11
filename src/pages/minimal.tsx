@@ -6,23 +6,24 @@ import FeatureBlock from "@containers/feature-block";
 import { getLayout } from "@components/layout/layout";
 import CollectionBlock from "@containers/collection-block";
 import Divider from "@components/ui/divider";
-import ProductsWithFlashSale from "@containers/products-with-flash-sale";
+/* import ProductsWithFlashSale from "@containers/products-with-flash-sale";
 import DownloadApps from "@components/common/download-apps";
-import Support from "@components/common/support";
+import Support from "@components/common/support"; */
 import HeroWithCategory from "@containers/hero-with-category";
 import BannerGridBlock from "@containers/banner-grid-block";
 import BestSellerProductFeed from "@components/product/feeds/best-seller-product-feed";
 import NewArrivalsProductFeed from "@components/product/feeds/new-arrivals-product-feed";
-import Subscription from "@components/common/subscription";
+/* import Subscription from "@components/common/subscription"; */
 import { ROUTES } from "@lib/routes";
 import { useBannerQuery } from "@framework/banner/banner.query";
+import NewTittles from "@components/ui/NewTittles";
 
 export { getStaticProps } from "@framework/ssr/pages";
 
-const flashSaleCarouselBreakpoint = {
+/* const flashSaleCarouselBreakpoint = {
   "1281": {
-    slidesPerView: 1,
-    spaceBetween: 28,
+    slidesPerView: 2,
+    spaceBetween: 20,
   },
   "768": {
     slidesPerView: 2,
@@ -32,7 +33,7 @@ const flashSaleCarouselBreakpoint = {
     slidesPerView: 1,
     spaceBetween: 12,
   },
-};
+}; */
 
 export default function Home() {
   const { data: banners } = useBannerQuery();
@@ -40,10 +41,11 @@ export default function Home() {
   return (
     <Container>
       <HeroWithCategory banners={banners?.homeTwoHeroBanner} />
-      <ProductsWithFlashSale carouselBreakpoint={flashSaleCarouselBreakpoint} />
+      {/* <ProductsWithFlashSale carouselBreakpoint={flashSaleCarouselBreakpoint} /> */}
       <BannerGridBlock banners={banners?.bannerGrid} />
       <CategoryGridBlock sectionHeading="text-featured-categories" />
       <Divider />
+      <NewTittles name = "Best Seller" />
       <BestSellerProductFeed />
       <BannerCard
         key={`banner--key${banners?.homeOneBanner?.id}`}
@@ -56,9 +58,9 @@ export default function Home() {
       <BrandBlock sectionHeading="text-top-brands" />
       <FeatureBlock />
       <CollectionBlock />
-      <DownloadApps />
+      {/* <DownloadApps />
       <Support />
-      <Subscription />
+      <Subscription /> */}
     </Container>
   );
 }
