@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import SearchIcon from "@components/icons/search-icon";
 /* import HeaderMenu from "@components/layout/header/header-menu"; */
 import SpsHome from "@components/common/homeSps/spsHome";
+import MetaC from "@components/common/HomeSps/metaC";
 import { useUI } from "@contexts/ui.context";
 import { ROUTES } from "@lib/routes";
 import { addActiveScroll } from "@utils/add-active-scroll";
@@ -71,47 +72,46 @@ const Header: React.FC = () => {
               className="hidden lg:flex md:ms-6 xl:ms-10"
             />
           )} */}
-          <div className="hidden lg:mx-32 lg:flex  lg:flex-row lg:justify-evenly">
-          <Link className="mx-4  " href={ROUTES.HOME}>
+
+          <div className="hidden w-full lg:flex lg:flex-row lg:justify-evenly px-20">
+            <Link className="" href={ROUTES.HOME}>
               <div>
                 <h3 className="font-segoe font-bold text-xl">Inicio</h3>
               </div>
             </Link>
-            <Link className="mx-4" href={ROUTES.CATEGORYMEN}>
+            <Link className="" href={ROUTES.CATEGORYMEN}>
               <div>
                 <h3 className="font-segoe font-bold text-xl">Hombre</h3>
               </div>
             </Link>
-            <Link className="mx-4" href={ROUTES.CATEGORYWOMAN}>
+            <Link className="" href={ROUTES.CATEGORYWOMAN}>
               <div>
                 <h3 className="font-segoe font-bold text-xl">Mujer</h3>
               </div>
             </Link>
-            <Link className="mx-4" href={ROUTES.HOME}>
+            {/* <Link className="mx-4" href={ROUTES.HOME}>
               <div>
                 <h3 className="font-segoe font-bold text-xl">Categorias</h3>
               </div>
-            </Link>
-            <Link className="mx-4" href={ROUTES.OFFERS}>
+            </Link> */}
+            <Link className="" href={ROUTES.OFFERS}>
               <div>
                 <h3 className="font-segoe font-bold text-xl">Oferta</h3>
               </div>
             </Link>
-            <Link className="mx-4" href={ROUTES.SHOPS}>
+            <Link className="" href={ROUTES.SHOPS}>
               <div>
                 <h3 className="font-segoe font-bold text-xl">Tiendas</h3>
               </div>
             </Link>
-            <Link className="mx-4" href={ROUTES.SEARCH}>
+            <Link className="" href={ROUTES.SEARCH}>
               <div>
                 <h3 className="font-segoe font-bold text-xl">Buscar</h3>
               </div>
             </Link>
-            
-            
           </div>
-
           <div className="hidden md:flex justify-end items-center space-s-6 lg:space-s-5 xl:space-s-8 2xl:space-s-10 ms-auto flex-shrink-0">
+          <MetaC />
             <button
               className="flex items-center justify-center flex-shrink-0 h-auto relative focus:outline-none transform"
               onClick={openSearch}
