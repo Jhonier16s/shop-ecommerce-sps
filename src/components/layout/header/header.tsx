@@ -76,17 +76,17 @@ const Header: React.FC = () => {
           <div className="hidden w-full lg:flex lg:flex-row lg:justify-evenly px-20">
             <Link className="" href={ROUTES.HOME}>
               <div>
-                <h3 className="font-segoe font-bold text-xl">Inicio</h3>
+                <h3 className="font-segoe font-bold text-xl">Home</h3>
               </div>
             </Link>
             <Link className="" href={ROUTES.CATEGORYMEN}>
               <div>
-                <h3 className="font-segoe font-bold text-xl">Hombre</h3>
+                <h3 className="font-segoe font-bold text-xl">Men</h3>
               </div>
             </Link>
             <Link className="" href={ROUTES.CATEGORYWOMAN}>
               <div>
-                <h3 className="font-segoe font-bold text-xl">Mujer</h3>
+                <h3 className="font-segoe font-bold text-xl">Women</h3>
               </div>
             </Link>
             {/* <Link className="mx-4" href={ROUTES.HOME}>
@@ -96,17 +96,17 @@ const Header: React.FC = () => {
             </Link> */}
             <Link className="" href={ROUTES.OFFERS}>
               <div>
-                <h3 className="font-segoe font-bold text-xl">Oferta</h3>
+                <h3 className="font-segoe font-bold text-xl">Offers</h3>
               </div>
             </Link>
             <Link className="" href={ROUTES.SHOPS}>
               <div>
-                <h3 className="font-segoe font-bold text-xl">Tiendas</h3>
+                <h3 className="font-segoe font-bold text-xl">Shops</h3>
               </div>
             </Link>
             <Link className="" href={ROUTES.SEARCH}>
               <div>
-                <h3 className="font-segoe font-bold text-xl">Buscar</h3>
+                <h3 className="font-segoe font-bold text-xl">Search</h3>
               </div>
             </Link>
           </div>
