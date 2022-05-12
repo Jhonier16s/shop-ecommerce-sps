@@ -30,6 +30,7 @@ module.exports = {
         facebook: "#4267B2",
         facebookHover: "#395fad",
         blackSps: "#0B1228",
+        footerSps: "#0B1228",
         graySps:"#E5E5E5",
         yellowSps: "#FFB300",
         purpleSps:'#4F0F68',
