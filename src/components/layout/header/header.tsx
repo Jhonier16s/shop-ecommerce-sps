@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import SearchIcon from "@components/icons/search-icon";
 /* import HeaderMenu from "@components/layout/header/header-menu"; */
 import SpsHome from "@components/common/homeSps/spsHome";
-/* import MetaC from "@components/common/HomeSps/metaC"; */
+import MetaC from "@components/common/HomeSps/metaC"; 
 import { useUI } from "@contexts/ui.context";
 import { ROUTES } from "@lib/routes";
 import { addActiveScroll } from "@utils/add-active-scroll";
@@ -111,7 +111,7 @@ const Header: React.FC = () => {
             </Link>
           </div>
           <div className="hidden md:flex justify-end items-center space-s-6 lg:space-s-5 xl:space-s-8 2xl:space-s-10 ms-auto flex-shrink-0">
-          {/* <MetaC /> */}
+           <MetaC /> 
             <button
               className="flex items-center justify-center flex-shrink-0 h-auto relative focus:outline-none transform"
               onClick={openSearch}

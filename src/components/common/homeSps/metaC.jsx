@@ -2,7 +2,6 @@ import React, {useState} from "react";
 
 const metaC = () => {
 
- /* getAccount(); */
  const [metaAccount, setMetaAccount] = useState("");
 
   return (
