@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import SearchIcon from "@components/icons/search-icon";
 /* import HeaderMenu from "@components/layout/header/header-menu"; */
 import SpsHome from "@components/common/homeSps/spsHome";
-import MetaC from "@components/common/HomeSps/metaC"; 
+import MetaC from "@components/common/homeSps/metaC"; 
 import { useUI } from "@contexts/ui.context";
 import { ROUTES } from "@lib/routes";
 import { addActiveScroll } from "@utils/add-active-scroll";
